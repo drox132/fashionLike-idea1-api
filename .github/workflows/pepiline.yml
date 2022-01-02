@@ -1,9 +1,10 @@
-name: Integration
+name: Node.js CI
 
 on:
   push:
-    branches:
-      - master
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs: 
   deploy:
