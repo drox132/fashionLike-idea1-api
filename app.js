@@ -1,5 +1,7 @@
-import express from 'express'
-import helloRouter from './routes/hello.js'
+// import express from 'express'
+// import userRouter from './src/routes/user.js'
+const express = require('express')
+const userRouter = require('./src/routes/user.js')
 const app = express()
 
 // settings
@@ -9,6 +11,7 @@ app.set('port', process.env.PORT || 3000)
 app.use(express.json())
 
 // routes
-app.use('/', helloRouter)
+app.use('/api', userRouter)
 
-export default app
+// export default app
+module.exports = app
