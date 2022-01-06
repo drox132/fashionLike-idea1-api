@@ -1,0 +1,28 @@
+POST http://localhost:3000/api/users/register
+content-type: application/json
+
+{
+  "name": "holahola",
+  "email": "hola@gmail.com",
+  "password": "123456"
+}
+
+###
+GET  http://localhost:3000/api/users
+content-type: application/json
+
+
+###
+POST  http://localhost:3000/api/users/login
+
+{
+  "email": "fran@gmail.com",
+  "password": "123"
+}
+
+###
+DELETE  http://localhost:3000/api/users/:userId
+
+{
+  "id": 1
+}
