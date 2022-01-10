@@ -56,7 +56,7 @@ router.delete('/users/:userId', (req, res) => {
 
 // update a user
 router.put('/users/:userId', (req, res) => {
-  const { userId } = req.params
+  const { userId } = req.params                     
   const { name, password, email } = req.body
 
   const userNewArry = users.filter((user) => user.id !== Number(userId))
